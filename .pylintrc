@@ -1,0 +1,58 @@
+[MASTER]
+# Add the src directory to the Python path
+init-hook='import sys; sys.path.append("./src")'
+
+# Use multiple processes to speed up Pylint (use "0" for auto)
+jobs=0
+
+# List of plugins to load
+load-plugins=
+
+# Allow loading modules/packages from top level directory
+ignore=CVS,core_segmentation.egg-info
+
+[MESSAGES CONTROL]
+# Disable specific warnings
+disable=C0111,  # missing-docstring
+        C0103,  # invalid-name
+        C0330,  # bad-continuation
+        W0511,  # fixme
+        R0903,  # too-few-public-methods
+        R0913,  # too-many-arguments
+        R0914   # too-many-locals
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=100
+
+# Maximum number of lines in a module
+max-module-lines=2000
+
+# String used as indentation unit (2 spaces, 4 spaces, or tab)
+indent-string='    '
+
+[BASIC]
+# Regular expression which should only match function or class names
+function-rgx=[a-z_][a-z0-9_]{2,50}$
+class-rgx=[A-Z_][a-zA-Z0-9_]+$
+
+# Good variable names
+good-names=i,j,k,ex,Run,_,x,y,X,Y,df
+
+[SIMILARITIES]
+# Minimum lines number of a similarity
+min-similarity-lines=10
+
+# Ignore imports when computing similarities
+ignore-imports=yes
+
+[TYPECHECK]
+# List of module names for which member attributes should not be checked
+ignored-modules=numpy,torch,cv2,PIL
+
+# List of classes names for which member attributes should not be checked
+ignored-classes=torch.nn.Module
+
+[MISCELLANEOUS]
+# List of note tags to take into consideration
+notes=FIXME,XXX,TODO
