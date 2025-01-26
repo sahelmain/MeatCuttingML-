@@ -1,141 +1,82 @@
-# Beef Cut Volume Predictor
+# Beef Carcass Composition Prediction
 
-A machine learning model that predicts sirloin volume based on various beef cut weights, CT scans, and millimeter radar measurements.
+This project uses machine learning to predict beef carcass composition from live cattle morphology measurements using millimeter radar data.
 
 ## Project Structure
 
 ```
 .
-├── config/                 # Configuration files
-│   ├── requirements.txt   # Python dependencies
-│   └── setup.py          # Package setup configuration
-│
 ├── data/                  # Data directory
-│   ├── beef_data.csv     # Beef cut analysis data
-│   ├── ct_scans/         # CT scan data
-│   └── radar_data/       # Millimeter radar measurements
-│
-├── matlab/               # MATLAB scripts
-│   ├── scripts/
-│   │   ├── process_ct_data.m      # CT data processing
-│   │   ├── process_radar_data.m   # Radar data processing
-│   │   ├── data_fusion.m          # Multi-modal data fusion
-│   │   └── data_augmentation.m    # Data augmentation
-│   └── functions/        # Helper functions
-│
-├── scripts/              # Python analysis scripts
-│   └── analyze_beef_data.py  # Main analysis and model script
-│
-├── src/                  # Source code
-│   ├── models/          # Model implementations
-│   └── utils/           # Utility functions
-│
-└── outputs/             # Model outputs (created during runtime)
-    ├── best_model.pth   # Best model checkpoint
-    ├── X_scaler.joblib  # Feature scaler
-    └── y_scaler.joblib  # Target scaler
+│   ├── radar_measurements.csv    # Initial radar data (100 cattle)
+│   ├── ct_composition.csv       # CT scan composition data
+│   ├── augmented_radar.csv      # Augmented radar data (1000+ samples)
+│   ├── wtamu_radar.csv         # WTAMU validation study radar data
+│   └── wtamu_weights.csv       # WTAMU validation study weights
+├── models/                # Saved models
+├── outputs/              # Output files and visualizations
+│   └── plots/            # Generated plots
+├── scripts/              # Python scripts
+│   └── predict_carcass_composition.py  # Main prediction script
+├── config/               # Configuration files
+└── README.md            # This file
 ```
 
-## Setup
+## Requirements
 
-1. Install dependencies:
-```bash
-pip install -r config/requirements.txt
-```
+- Python 3.8+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+- joblib
 
-2. Install package:
-```bash
-pip install -e .
-```
+## Project Phases
 
-3. MATLAB Requirements:
-- MATLAB R2023a or later
-- Image Processing Toolbox
-- Signal Processing Toolbox
-- Statistics and Machine Learning Toolbox
+1. Initial Model Training
+   - Train on data from 100 cattle
+   - Uses CT scan data for ground truth
+   - Evaluates model performance with cross-validation
+
+2. Data Augmentation
+   - Augment radar measurements to 1000+ samples
+   - Integration with point cloud augmentation (Tommy Dang)
+
+3. Model Application
+   - Apply trained model to augmented data
+   - Generate predictions for theoretical carcass composition
+
+4. Validation
+   - Validate model with West Texas A&M study data
+   - Compare predictions with actual carcass component weights
 
 ## Usage
 
-1. Process CT and Radar Data:
-```matlab
-% In MATLAB
-cd matlab/scripts
-ct_features = process_ct_data('path/to/ct/scan.dcm');
-radar_features = process_radar_data('path/to/radar/data.mat');
-fused_features = data_fusion(ct_features, radar_features);
-```
+1. Activate the environment:
+   ```bash
+   conda activate beef_env
+   ```
 
-2. Run the analysis and train the model:
-```bash
-python scripts/analyze_beef_data.py
-```
+2. Run the prediction script:
+   ```bash
+   python scripts/predict_carcass_composition.py
+   ```
 
-## Model Architecture
+3. Check results in the `outputs` directory:
+   - Model performance metrics
+   - Visualization plots
+   - Predictions for augmented data
+   - Validation results
 
-The project uses a multi-modal approach:
-1. CT Scan Processing:
-   - Hounsfield unit normalization
-   - Tissue segmentation
-   - Volume calculation
-   - Shape feature extraction
+## Model Performance
 
-2. Millimeter Radar Processing:
-   - Signal processing
-   - Range profile analysis
-   - Doppler processing
-   - Surface feature extraction
+The model evaluates performance using:
+- R² Score
+- Root Mean Square Error (RMSE)
+- Mean Absolute Error (MAE)
+- Cross-validation Score
 
-3. Data Fusion:
-   - Feature-level fusion
-   - Confidence-weighted combination
-   - Multi-modal validation
-
-4. Neural Network Ensemble:
-   - Multi-head attention mechanism
-   - Feature interaction layers
-   - Advanced residual blocks
-   - Ensemble prediction capability
-
-## Performance
-
-- R² Score: 0.9560 (95.60% accuracy)
-- Root Mean Squared Error: 722.05
-- Mean Squared Error: 521,362.16
-
-## Data Fields Definition
-
-### Input Variables
-1. CT Scan Features:
-   - Tissue composition ratios
-   - Volume measurements
-   - Shape metrics
-
-2. Radar Features:
-   - Surface morphology
-   - Motion characteristics
-   - Surface metrics
-
-3. Weight Measurements:
-   - `tot_wt_chuckbrisket`: Total weight of chuck brisket cut (in pounds)
-   - `tot_wt_chuckclod`: Total weight of chuck clod cut (in pounds)
-   - `tot_wt_chuckroll`: Total weight of chuck roll cut (in pounds)
-   - `tot_wt_loinwing`: Total weight of loin wing cut (in pounds)
-   - `tot_wt_plate`: Total weight of plate cut (in pounds)
-   - `tot_wt_rib`: Total weight of rib cut (in pounds)
-   - `tot_wt_round`: Total weight of round cut (in pounds)
-   - `tot_wt_sirloin`: Total weight of sirloin cut (in pounds)
-
-### Output Variable
-- `tot_vol_sirloin`: Total volume of sirloin (in cubic inches)
-
-### Data Augmentation
-- CT scan variations
-- Radar measurement augmentation
-- Synthetic data generation
-- Cross-modal consistency enforcement
-
-## Future Integration Points
-- Enhanced radar point cloud processing
-- Advanced CT-radar fusion techniques
-- Real-time processing capabilities
-- Automated calibration system
+Results are saved in the outputs directory along with visualizations of:
+- Actual vs Predicted plots
+- Feature importance rankings
+- Prediction error analysis
