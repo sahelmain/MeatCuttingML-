@@ -8,7 +8,7 @@ The project:
 1. Predicts carcass composition non-invasively
 2. Uses data augmentation to improve accuracy
 3. Provides simple prediction interface
-4. Includes performance visualization
+4. Includes key performance metrics
 
 ## Project Structure
 
@@ -20,32 +20,20 @@ The project:
 ├── models/                     # trained models
 │   ├── scaler.pkl             # data scaler
 │   └── results.json           # performance metrics
-├── logs/                      # execution logs
+├── outputs/
+│   └── key_plots/             # key performance visualizations
 ├── Final_Report.md            # detailed documentation
 ├── requirements.txt           # dependencies
 └── README.md                  # this file
 ```
 
-## Features
+## Key Results
 
-- High accuracy with R² scores above 0.95
-- Data augmentation from 98 to 980 samples
-- Cross-validation for robust testing
-- Simple prediction API
+### Most Significant Improvements
+- Muscle (Round): R² improved from 0.925 to 0.996 (+7.1%)
+- Fat (Sirloin): R² improved from 0.993 to 0.996 (+0.3%)
 
-## Performance
-
-### Bone Volume
-- Sirloin: R² = 0.996 (augmented)
-- Round: R² = 0.996 (augmented)
-
-### Fat Volume
-- Sirloin: R² = 0.996 (augmented)
-- Round: R² = 0.996 (augmented)
-
-### Muscle Volume
-- Sirloin: R² = 0.996 (augmented)
-- Round: R² = 0.996 (augmented)
+See `outputs/key_plots/` for feature importance and prediction accuracy visualizations of these key improvements.
 
 ## Requirements
 
