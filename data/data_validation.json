@@ -1,0 +1,574 @@
+{
+  "missing_values": {
+    "mean_x": 0,
+    "mean_y": 0,
+    "mean_z": 0,
+    "std_x": 0,
+    "std_y": 0,
+    "std_z": 0,
+    "bbox_volume": 0,
+    "point_density": 0,
+    "bbox_length": 0,
+    "bbox_width": 0,
+    "bbox_height": 0,
+    "mean_dist_to_centroid": 0,
+    "std_dist_to_centroid": 0,
+    "planarity": 0,
+    "sphericity": 0,
+    "linearity": 0,
+    "id": 0,
+    "tot_bone_chuckbrisket": 0,
+    "tot_bone_chuckclod": 0,
+    "tot_bone_chuckroll": 0,
+    "tot_bone_loinwing": 0,
+    "tot_bone_plate": 0,
+    "tot_bone_rib": 0,
+    "tot_bone_round": 0,
+    "tot_bone_sirloin": 0,
+    "tot_bone_vol_chuckbrisket": 0,
+    "tot_bone_vol_chuckclod": 0,
+    "tot_bone_vol_chuckroll": 0,
+    "tot_bone_vol_loinwing": 0,
+    "tot_bone_vol_plate": 0,
+    "tot_bone_vol_rib": 0,
+    "tot_bone_vol_round": 0,
+    "tot_bone_vol_sirloin": 0,
+    "tot_fat_chuckbrisket": 0,
+    "tot_fat_chuckclod": 0,
+    "tot_fat_chuckroll": 0,
+    "tot_fat_loinwing": 0,
+    "tot_fat_plate": 0,
+    "tot_fat_rib": 0,
+    "tot_fat_round": 0,
+    "tot_fat_sirloin": 0,
+    "tot_fat_vol_chuckbrisket": 0,
+    "tot_fat_vol_chuckclod": 0,
+    "tot_fat_vol_chuckroll": 0,
+    "tot_fat_vol_loinwing": 0,
+    "tot_fat_vol_plate": 0,
+    "tot_fat_vol_rib": 0,
+    "tot_fat_vol_round": 0,
+    "tot_fat_vol_sirloin": 0,
+    "tot_musc_chuckbrisket": 0,
+    "tot_musc_chuckclod": 0,
+    "tot_musc_chuckroll": 0,
+    "tot_musc_loinwing": 0,
+    "tot_musc_plate": 0,
+    "tot_musc_rib": 0,
+    "tot_musc_round": 0,
+    "tot_musc_sirloin": 0,
+    "tot_musc_vol_chuckbrisket": 0,
+    "tot_musc_vol_chuckclod": 0,
+    "tot_musc_vol_chuckroll": 0,
+    "tot_musc_vol_loinwing": 0,
+    "tot_musc_vol_plate": 0,
+    "tot_musc_vol_rib": 0,
+    "tot_musc_vol_round": 0,
+    "tot_musc_vol_sirloin": 0,
+    "tot_vol_chuckbrisket": 0,
+    "tot_vol_chuckclod": 0,
+    "tot_vol_chuckroll": 0,
+    "tot_vol_loinwing": 0,
+    "tot_vol_plate": 0,
+    "tot_vol_rib": 0,
+    "tot_vol_round": 0,
+    "tot_vol_sirloin": 0,
+    "tot_wt_chuckbrisket": 0,
+    "tot_wt_chuckclod": 0,
+    "tot_wt_chuckroll": 0,
+    "tot_wt_loinwing": 0,
+    "tot_wt_plate": 0,
+    "tot_wt_rib": 0,
+    "tot_wt_round": 0,
+    "tot_wt_sirloin": 0
+  },
+  "duplicates": 0,
+  "value_ranges": {
+    "mean_x": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "mean_y": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "mean_z": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "std_x": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "std_y": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "std_z": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "bbox_volume": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "point_density": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "bbox_length": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "bbox_width": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "bbox_height": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "mean_dist_to_centroid": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "std_dist_to_centroid": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "planarity": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "sphericity": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "linearity": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "id": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_bone_vol_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_fat_vol_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_musc_vol_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_vol_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_chuckbrisket": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_chuckclod": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_chuckroll": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_loinwing": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_plate": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_rib": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_round": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    },
+    "tot_wt_sirloin": {
+      "min": NaN,
+      "max": NaN,
+      "mean": NaN,
+      "std": NaN
+    }
+  }
+}

@@ -1,51 +1,51 @@
 # Beef Carcass Composition Prediction
 
-This project uses machine learning to predict beef carcass composition (bone, fat, and muscle volumes) from non-volume measurements. The models achieve high accuracy (R² ≥ 0.95) through gradient boosting and data augmentation techniques.
+A machine learning project for predicting beef carcass composition from basic measurements. Uses gradient boosting to achieve high accuracy (R² ≥ 0.95) in predicting bone, fat, and muscle volumes.
 
-## Project Overview
+## Overview
 
-The project aims to:
-1. Predict carcass composition without invasive procedures
-2. Improve prediction accuracy through data augmentation
-3. Provide an easy-to-use interface for making predictions
-4. Generate comprehensive performance visualizations
+The project:
+1. Predicts carcass composition non-invasively
+2. Uses data augmentation to improve accuracy
+3. Provides simple prediction interface
+4. Includes performance visualization
 
 ## Project Structure
 
 ```
 .
-├── data_augmentation.py         # Data augmentation implementation
-├── improved_predict_composition.py  # Main prediction pipeline
-├── model_config.yaml           # Model configuration parameters
-├── models/                     # Trained models and results
-│   ├── scaler.pkl             # Feature scaler
-│   └── results.json           # Performance metrics
-├── logs/                      # Execution logs
-├── Final_Report.md            # Comprehensive project report
-├── requirements.txt           # Project dependencies
-└── README.md                  # This file
+├── data_augmentation.py         # data augmentation implementation
+├── improved_predict_composition.py  # main prediction pipeline
+├── model_config.yaml           # model parameters
+├── models/                     # trained models
+│   ├── scaler.pkl             # data scaler
+│   └── results.json           # performance metrics
+├── logs/                      # execution logs
+├── Final_Report.md            # detailed documentation
+├── requirements.txt           # dependencies
+└── README.md                  # this file
 ```
 
-## Key Features
+## Features
 
-- **High Accuracy**: Achieves R² scores ≥ 0.95 for all tissue types
-- **Data Augmentation**: Expands training data from 98 to 980 samples
-- **Robust Validation**: Cross-validation and performance visualization
-- **Easy Integration**: Simple API for making predictions
+- High accuracy with R² scores above 0.95
+- Data augmentation from 98 to 980 samples
+- Cross-validation for robust testing
+- Simple prediction API
 
-## Model Performance
+## Performance
 
-### Bone Volume Predictions
-- **Sirloin**: R² = 0.996 (Augmented)
-- **Round**: R² = 0.996 (Augmented)
+### Bone Volume
+- Sirloin: R² = 0.996 (augmented)
+- Round: R² = 0.996 (augmented)
 
-### Fat Volume Predictions
-- **Sirloin**: R² = 0.996 (Augmented)
-- **Round**: R² = 0.996 (Augmented)
+### Fat Volume
+- Sirloin: R² = 0.996 (augmented)
+- Round: R² = 0.996 (augmented)
 
-### Muscle Volume Predictions
-- **Sirloin**: R² = 0.996 (Augmented)
-- **Round**: R² = 0.996 (Augmented)
+### Muscle Volume
+- Sirloin: R² = 0.996 (augmented)
+- Round: R² = 0.996 (augmented)
 
 ## Requirements
 
@@ -64,37 +64,35 @@ seaborn>=0.11.0
 pip install -r requirements.txt
 ```
 
-2. Run predictions:
+2. Make predictions:
 ```python
 import pandas as pd
 import pickle
 
-# Load the scaler and model
+# load scaler and model
 with open("models/scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
-# Load specific model (e.g., muscle in sirloin)
+# load specific model
 with open("models/musc_sirloin_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-# Prepare your data
+# prepare data
 data = pd.read_csv("your_measurements.csv")
 
-# Scale and predict
+# predict
 X_scaled = scaler.transform(data)
 predictions = model.predict(X_scaled)
 ```
 
 ## Documentation
 
-For detailed information about:
-- Model architecture and training
-- Data augmentation methodology
+See Final_Report.md for details on:
+- Model architecture
+- Data augmentation methods
 - Performance analysis
 - Validation results
 
-Please refer to [Final_Report.md](Final_Report.md)
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see LICENSE file
