@@ -1,0 +1,20 @@
+2025-01-30 13:10:08,820 - INFO - Loading data...
+2025-01-30 13:10:08,824 - INFO - Loaded 98 samples
+2025-01-30 13:10:08,824 - INFO - Training models with improved parameters...
+2025-01-30 13:10:08,840 - INFO - Starting feature engineering...
+2025-01-30 13:10:08,980 - INFO - Created interaction terms
+2025-01-30 13:10:08,980 - INFO - Created polynomial features
+2025-01-30 13:10:08,995 - INFO - Created statistical features
+2025-01-30 13:10:08,995 - INFO - Feature engineering complete. Original features: 66, Engineered features: 375
+2025-01-30 13:10:08,997 - INFO - Training model for musc - sirloin
+2025-01-30 13:10:09,001 - INFO - Training gbm model...
+2025-01-30 13:12:14,358 - INFO - gbm Results:
+2025-01-30 13:12:14,362 - INFO -   RMSE: 0.0618
+2025-01-30 13:12:14,362 - INFO -   R²: 0.9924
+2025-01-30 13:12:14,362 - INFO -   Best params: {'learning_rate': 0.2599294316962114, 'loss': 'squared_error', 'max_depth': 5, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 18, 'n_estimators': 1395, 'subsample': 0.9702292921764571}
+2025-01-30 13:12:14,362 - INFO - Training xgb model...
+2025-01-30 13:12:34,762 - INFO - xgb Results:
+2025-01-30 13:12:34,763 - INFO -   RMSE: 0.0932
+2025-01-30 13:12:34,763 - INFO -   R²: 0.9828
+2025-01-30 13:12:34,763 - INFO -   Best params: {'colsample_bytree': 0.9951706566708886, 'gamma': 0.0011876178794228975, 'learning_rate': 0.05971450832513312, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 1262, 'subsample': 0.5047427168142491}
+2025-01-30 13:12:34,763 - INFO - Training lgb model...

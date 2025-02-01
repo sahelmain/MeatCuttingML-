@@ -1,0 +1,164 @@
+2025-01-30 13:43:18,251 - INFO - Loading data...
+2025-01-30 13:43:18,256 - INFO - Loaded 98 samples
+2025-01-30 13:43:18,256 - INFO - Training models with improved parameters...
+2025-01-30 13:43:18,270 - INFO - Starting feature engineering...
+2025-01-30 13:43:18,313 - INFO - Created interaction terms
+2025-01-30 13:43:18,314 - INFO - Created polynomial features
+2025-01-30 13:43:18,328 - INFO - Created statistical features
+2025-01-30 13:43:18,328 - INFO - Feature engineering complete. Original features: 66, Engineered features: 375
+2025-01-30 13:43:18,330 - INFO - Training model for musc - sirloin
+2025-01-30 13:43:18,334 - INFO - Training gbm model...
+2025-01-30 13:43:24,698 - INFO - gbm Results:
+2025-01-30 13:43:24,699 - INFO -   RMSE: 0.1906
+2025-01-30 13:43:24,699 - INFO -   R²: 0.9279
+2025-01-30 13:43:24,700 - INFO -   Best params: {'learning_rate': 0.029279593144546104, 'loss': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 9, 'n_estimators': 465, 'subsample': 0.8194935157466344}
+2025-01-30 13:43:24,700 - INFO - Training xgb model...
+2025-01-30 13:43:26,619 - INFO - xgb Results:
+2025-01-30 13:43:26,619 - INFO -   RMSE: 0.0663
+2025-01-30 13:43:26,619 - INFO -   R²: 0.9913
+2025-01-30 13:43:26,619 - INFO -   Best params: {'colsample_bytree': 0.9960215400417053, 'gamma': 0.14008401523652403, 'learning_rate': 0.10848263394910998, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 372, 'subsample': 0.9394679179698697}
+2025-01-30 13:43:26,619 - INFO - Training lgb model...
+2025-01-30 13:44:13,578 - INFO - lgb Results:
+2025-01-30 13:44:13,585 - INFO -   RMSE: 0.0943
+2025-01-30 13:44:13,585 - INFO -   R²: 0.9824
+2025-01-30 13:44:13,590 - INFO -   Best params: {'colsample_bytree': 0.9141362604455774, 'learning_rate': 0.13710776839570346, 'max_depth': 8, 'min_child_samples': 3, 'n_estimators': 211, 'num_leaves': 49, 'subsample': 0.9760533769831113}
+2025-01-30 13:44:13,866 - INFO - Training model for musc - round
+2025-01-30 13:44:13,880 - INFO - Training gbm model...
+2025-01-30 13:44:19,310 - INFO - gbm Results:
+2025-01-30 13:44:19,310 - INFO -   RMSE: 0.1898
+2025-01-30 13:44:19,310 - INFO -   R²: 0.8932
+2025-01-30 13:44:19,310 - INFO -   Best params: {'learning_rate': 0.029279593144546104, 'loss': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 9, 'n_estimators': 465, 'subsample': 0.8194935157466344}
+2025-01-30 13:44:19,310 - INFO - Training xgb model...
+2025-01-30 13:44:20,386 - INFO - xgb Results:
+2025-01-30 13:44:20,386 - INFO -   RMSE: 0.1049
+2025-01-30 13:44:20,386 - INFO -   R²: 0.9673
+2025-01-30 13:44:20,386 - INFO -   Best params: {'colsample_bytree': 0.6783931449676581, 'gamma': 0.045227288910538066, 'learning_rate': 0.07181276284502022, 'max_depth': 7, 'min_child_weight': 2, 'n_estimators': 466, 'subsample': 0.9314950036607718}
+2025-01-30 13:44:20,386 - INFO - Training lgb model...
+2025-01-30 13:44:51,068 - INFO - lgb Results:
+2025-01-30 13:44:51,069 - INFO -   RMSE: 0.1167
+2025-01-30 13:44:51,069 - INFO -   R²: 0.9596
+2025-01-30 13:44:51,069 - INFO -   Best params: {'colsample_bytree': 0.7394663949166917, 'learning_rate': 0.028273544707369945, 'max_depth': 3, 'min_child_samples': 1, 'n_estimators': 227, 'num_leaves': 26, 'subsample': 0.9746919954946938}
+2025-01-30 13:44:51,144 - INFO - Training model for musc - loinwing
+2025-01-30 13:44:51,157 - INFO - Training gbm model...
+2025-01-30 13:44:57,599 - INFO - gbm Results:
+2025-01-30 13:44:57,599 - INFO -   RMSE: 0.2201
+2025-01-30 13:44:57,599 - INFO -   R²: 0.8073
+2025-01-30 13:44:57,599 - INFO -   Best params: {'learning_rate': 0.11254150515392515, 'loss': 'huber', 'max_depth': 4, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 5, 'n_estimators': 479, 'subsample': 0.7103996728090174}
+2025-01-30 13:44:57,599 - INFO - Training xgb model...
+2025-01-30 13:44:58,571 - INFO - xgb Results:
+2025-01-30 13:44:58,572 - INFO -   RMSE: 0.0706
+2025-01-30 13:44:58,572 - INFO -   R²: 0.9802
+2025-01-30 13:44:58,572 - INFO -   Best params: {'colsample_bytree': 0.8143098736299034, 'gamma': 0.0902897700544083, 'learning_rate': 0.16870747416195522, 'max_depth': 6, 'min_child_weight': 3, 'n_estimators': 425, 'subsample': 0.8783251227163527}
+2025-01-30 13:44:58,572 - INFO - Training lgb model...
+2025-01-30 13:45:30,191 - INFO - lgb Results:
+2025-01-30 13:45:30,192 - INFO -   RMSE: 0.1476
+2025-01-30 13:45:30,193 - INFO -   R²: 0.9134
+2025-01-30 13:45:30,193 - INFO -   Best params: {'colsample_bytree': 0.7394663949166917, 'learning_rate': 0.028273544707369945, 'max_depth': 3, 'min_child_samples': 1, 'n_estimators': 227, 'num_leaves': 26, 'subsample': 0.9746919954946938}
+2025-01-30 13:45:30,218 - INFO - Training model for musc - rib
+2025-01-30 13:45:30,223 - INFO - Training gbm model...
+2025-01-30 13:45:35,440 - INFO - gbm Results:
+2025-01-30 13:45:35,440 - INFO -   RMSE: 0.1873
+2025-01-30 13:45:35,440 - INFO -   R²: 0.8670
+2025-01-30 13:45:35,440 - INFO -   Best params: {'learning_rate': 0.06629196608377566, 'loss': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 3, 'min_samples_split': 2, 'n_estimators': 443, 'subsample': 0.7579526072702278}
+2025-01-30 13:45:35,440 - INFO - Training xgb model...
+2025-01-30 13:45:36,737 - INFO - xgb Results:
+2025-01-30 13:45:36,737 - INFO -   RMSE: 0.0710
+2025-01-30 13:45:36,737 - INFO -   R²: 0.9809
+2025-01-30 13:45:36,737 - INFO -   Best params: {'colsample_bytree': 0.9329770563201687, 'gamma': 0.21233911067827616, 'learning_rate': 0.04454674376934912, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 413, 'subsample': 0.8099025726528951}
+2025-01-30 13:45:36,737 - INFO - Training lgb model...
+2025-01-30 13:46:09,697 - INFO - lgb Results:
+2025-01-30 13:46:09,698 - INFO -   RMSE: 0.0869
+2025-01-30 13:46:09,698 - INFO -   R²: 0.9714
+2025-01-30 13:46:09,698 - INFO -   Best params: {'colsample_bytree': 0.9141362604455774, 'learning_rate': 0.13710776839570346, 'max_depth': 8, 'min_child_samples': 3, 'n_estimators': 211, 'num_leaves': 49, 'subsample': 0.9760533769831113}
+2025-01-30 13:46:09,722 - INFO - Training model for musc - plate
+2025-01-30 13:46:09,728 - INFO - Training gbm model...
+2025-01-30 13:46:14,986 - INFO - gbm Results:
+2025-01-30 13:46:14,986 - INFO -   RMSE: 0.2004
+2025-01-30 13:46:14,986 - INFO -   R²: 0.9072
+2025-01-30 13:46:14,986 - INFO -   Best params: {'learning_rate': 0.029279593144546104, 'loss': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 9, 'n_estimators': 465, 'subsample': 0.8194935157466344}
+2025-01-30 13:46:14,986 - INFO - Training xgb model...
+2025-01-30 13:46:15,956 - INFO - xgb Results:
+2025-01-30 13:46:15,957 - INFO -   RMSE: 0.1488
+2025-01-30 13:46:15,957 - INFO -   R²: 0.9489
+2025-01-30 13:46:15,957 - INFO -   Best params: {'colsample_bytree': 0.9960215400417053, 'gamma': 0.14008401523652403, 'learning_rate': 0.10848263394910998, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 372, 'subsample': 0.9394679179698697}
+2025-01-30 13:46:15,957 - INFO - Training lgb model...
+2025-01-30 13:46:49,836 - INFO - lgb Results:
+2025-01-30 13:46:49,837 - INFO -   RMSE: 0.1221
+2025-01-30 13:46:49,837 - INFO -   R²: 0.9655
+2025-01-30 13:46:49,837 - INFO -   Best params: {'colsample_bytree': 0.82272050498334, 'learning_rate': 0.1878694070905484, 'max_depth': 4, 'min_child_samples': 3, 'n_estimators': 459, 'num_leaves': 33, 'subsample': 0.6388705975083074}
+2025-01-30 13:46:49,860 - INFO - Training model for musc - chuckroll
+2025-01-30 13:46:49,867 - INFO - Training gbm model...
+2025-01-30 13:46:55,099 - INFO - gbm Results:
+2025-01-30 13:46:55,099 - INFO -   RMSE: 0.2658
+2025-01-30 13:46:55,099 - INFO -   R²: 0.8821
+2025-01-30 13:46:55,099 - INFO -   Best params: {'learning_rate': 0.12732148682926614, 'loss': 'huber', 'max_depth': 8, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 148, 'subsample': 0.8099098641033556}
+2025-01-30 13:46:55,099 - INFO - Training xgb model...
+2025-01-30 13:46:56,047 - INFO - xgb Results:
+2025-01-30 13:46:56,048 - INFO -   RMSE: 0.0929
+2025-01-30 13:46:56,048 - INFO -   R²: 0.9856
+2025-01-30 13:46:56,048 - INFO -   Best params: {'colsample_bytree': 0.9960215400417053, 'gamma': 0.14008401523652403, 'learning_rate': 0.10848263394910998, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 372, 'subsample': 0.9394679179698697}
+2025-01-30 13:46:56,048 - INFO - Training lgb model...
+2025-01-30 13:47:27,582 - INFO - lgb Results:
+2025-01-30 13:47:27,583 - INFO -   RMSE: 0.1073
+2025-01-30 13:47:27,583 - INFO -   R²: 0.9808
+2025-01-30 13:47:27,583 - INFO -   Best params: {'colsample_bytree': 0.7394663949166917, 'learning_rate': 0.028273544707369945, 'max_depth': 3, 'min_child_samples': 1, 'n_estimators': 227, 'num_leaves': 26, 'subsample': 0.9746919954946938}
+2025-01-30 13:47:27,601 - INFO - Training model for musc - chuckclod
+2025-01-30 13:47:27,608 - INFO - Training gbm model...
+2025-01-30 13:47:35,284 - INFO - gbm Results:
+2025-01-30 13:47:35,285 - INFO -   RMSE: 0.1641
+2025-01-30 13:47:35,285 - INFO -   R²: 0.9704
+2025-01-30 13:47:35,285 - INFO -   Best params: {'learning_rate': 0.04058131129049943, 'loss': 'squared_error', 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 8, 'n_estimators': 321, 'subsample': 0.662397808134481}
+2025-01-30 13:47:35,285 - INFO - Training xgb model...
+2025-01-30 13:47:37,275 - INFO - xgb Results:
+2025-01-30 13:47:37,275 - INFO -   RMSE: 0.3939
+2025-01-30 13:47:37,275 - INFO -   R²: 0.8292
+2025-01-30 13:47:37,275 - INFO -   Best params: {'colsample_bytree': 0.9720067339243328, 'gamma': 0.0704161308495439, 'learning_rate': 0.02484727817345922, 'max_depth': 10, 'min_child_weight': 3, 'n_estimators': 326, 'subsample': 0.8073318609454947}
+2025-01-30 13:47:37,275 - INFO - Training lgb model...
+2025-01-30 13:48:22,741 - INFO - lgb Results:
+2025-01-30 13:48:22,741 - INFO -   RMSE: 0.3340
+2025-01-30 13:48:22,741 - INFO -   R²: 0.8772
+2025-01-30 13:48:22,741 - INFO -   Best params: {'colsample_bytree': 0.6780971951192178, 'learning_rate': 0.07363295094984301, 'max_depth': 7, 'min_child_samples': 4, 'n_estimators': 234, 'num_leaves': 36, 'subsample': 0.6174415087017735}
+2025-01-30 13:48:22,765 - INFO - Training model for musc - chuckbrisket
+2025-01-30 13:48:22,770 - INFO - Training gbm model...
+2025-01-30 13:48:27,889 - INFO - gbm Results:
+2025-01-30 13:48:27,889 - INFO -   RMSE: 0.1754
+2025-01-30 13:48:27,889 - INFO -   R²: 0.9347
+2025-01-30 13:48:27,889 - INFO -   Best params: {'learning_rate': 0.042203621870357574, 'loss': 'squared_error', 'max_depth': 4, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 3, 'n_estimators': 422, 'subsample': 0.828024468035746}
+2025-01-30 13:48:27,889 - INFO - Training xgb model...
+2025-01-30 13:48:28,809 - INFO - xgb Results:
+2025-01-30 13:48:28,809 - INFO -   RMSE: 0.3666
+2025-01-30 13:48:28,810 - INFO -   R²: 0.7145
+2025-01-30 13:48:28,810 - INFO -   Best params: {'colsample_bytree': 0.9329770563201687, 'gamma': 0.21233911067827616, 'learning_rate': 0.04454674376934912, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 413, 'subsample': 0.8099025726528951}
+2025-01-30 13:48:28,810 - INFO - Training lgb model...
+2025-01-30 13:48:59,956 - INFO - lgb Results:
+2025-01-30 13:48:59,957 - INFO -   RMSE: 0.0872
+2025-01-30 13:48:59,957 - INFO -   R²: 0.9839
+2025-01-30 13:48:59,957 - INFO -   Best params: {'colsample_bytree': 0.9977829850443283, 'learning_rate': 0.04342579800869562, 'max_depth': 6, 'min_child_samples': 1, 'n_estimators': 497, 'num_leaves': 40, 'subsample': 0.6715290836885315}
+2025-01-30 13:48:59,990 - INFO - Training model for fat - sirloin
+2025-01-30 13:48:59,996 - INFO - Training gbm model...
+2025-01-30 13:49:05,001 - INFO - gbm Results:
+2025-01-30 13:49:05,001 - INFO -   RMSE: 0.2124
+2025-01-30 13:49:05,001 - INFO -   R²: 0.9511
+2025-01-30 13:49:05,001 - INFO -   Best params: {'learning_rate': 0.08116262258099886, 'loss': 'squared_error', 'max_depth': 9, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 6, 'n_estimators': 120, 'subsample': 0.6624074561769746}
+2025-01-30 13:49:05,001 - INFO - Training xgb model...
+2025-01-30 13:49:05,933 - INFO - xgb Results:
+2025-01-30 13:49:05,933 - INFO -   RMSE: 0.0914
+2025-01-30 13:49:05,933 - INFO -   R²: 0.9910
+2025-01-30 13:49:05,933 - INFO -   Best params: {'colsample_bytree': 0.6783931449676581, 'gamma': 0.045227288910538066, 'learning_rate': 0.07181276284502022, 'max_depth': 7, 'min_child_weight': 2, 'n_estimators': 466, 'subsample': 0.9314950036607718}
+2025-01-30 13:49:05,933 - INFO - Training lgb model...
+2025-01-30 13:49:37,938 - INFO - lgb Results:
+2025-01-30 13:49:37,939 - INFO -   RMSE: 0.0964
+2025-01-30 13:49:37,940 - INFO -   R²: 0.9899
+2025-01-30 13:49:37,940 - INFO -   Best params: {'colsample_bytree': 0.7394663949166917, 'learning_rate': 0.028273544707369945, 'max_depth': 3, 'min_child_samples': 1, 'n_estimators': 227, 'num_leaves': 26, 'subsample': 0.9746919954946938}
+2025-01-30 13:49:37,957 - INFO - Training model for fat - round
+2025-01-30 13:49:37,963 - INFO - Training gbm model...
+2025-01-30 13:49:43,079 - INFO - gbm Results:
+2025-01-30 13:49:43,080 - INFO -   RMSE: 0.1909
+2025-01-30 13:49:43,080 - INFO -   R²: 0.9484
+2025-01-30 13:49:43,080 - INFO -   Best params: {'learning_rate': 0.029279593144546104, 'loss': 'squared_error', 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'min_samples_split': 9, 'n_estimators': 465, 'subsample': 0.8194935157466344}
+2025-01-30 13:49:43,080 - INFO - Training xgb model...
+2025-01-30 13:49:43,986 - INFO - xgb Results:
+2025-01-30 13:49:43,986 - INFO -   RMSE: 0.1003
+2025-01-30 13:49:43,986 - INFO -   R²: 0.9858
+2025-01-30 13:49:43,986 - INFO -   Best params: {'colsample_bytree': 0.9960215400417053, 'gamma': 0.14008401523652403, 'learning_rate': 0.10848263394910998, 'max_depth': 4, 'min_child_weight': 2, 'n_estimators': 372, 'subsample': 0.9394679179698697}
+2025-01-30 13:49:43,986 - INFO - Training lgb model...

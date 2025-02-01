@@ -1,0 +1,224 @@
+{
+  "bone": {
+    "sirloin": {
+      "best_score": 0.9678592394625106,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "round": {
+      "best_score": 0.9815333449260777,
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 250
+      }
+    },
+    "loinwing": {
+      "best_score": 0.9642122892088947,
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "rib": {
+      "best_score": 0.9146078981266186,
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 150
+      }
+    },
+    "plate": {
+      "best_score": 0.9534118687258545,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "chuckroll": {
+      "best_score": 0.9695153092884418,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "chuckclod": {
+      "best_score": 0.9668791823547036,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 250
+      }
+    },
+    "chuckbrisket": {
+      "best_score": 0.8692988385321982,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 150
+      }
+    }
+  },
+  "fat": {
+    "sirloin": {
+      "best_score": 0.9890767292915907,
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 150
+      }
+    },
+    "round": {
+      "best_score": 0.9875078347554835,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_samples_split": 2,
+        "n_estimators": 250
+      }
+    },
+    "loinwing": {
+      "best_score": 0.9906892779381407,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 150
+      }
+    },
+    "rib": {
+      "best_score": 0.9870592682962108,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "plate": {
+      "best_score": 0.99097381626516,
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 200
+      }
+    },
+    "chuckroll": {
+      "best_score": 0.9825549807996266,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 250
+      }
+    },
+    "chuckclod": {
+      "best_score": 0.9878919932899078,
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "chuckbrisket": {
+      "best_score": 0.9712340184343612,
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 200
+      }
+    }
+  },
+  "musc": {
+    "sirloin": {
+      "best_score": 0.9783444290624213,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 250
+      }
+    },
+    "round": {
+      "best_score": 0.8876884771028255,
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 4,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "loinwing": {
+      "best_score": 0.9367093580043327,
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 200
+      }
+    },
+    "rib": {
+      "best_score": 0.9457213512674866,
+      "best_params": {
+        "learning_rate": 0.2,
+        "max_depth": 4,
+        "min_samples_split": 2,
+        "n_estimators": 250
+      }
+    },
+    "plate": {
+      "best_score": 0.9548039279009293,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 5,
+        "n_estimators": 250
+      }
+    },
+    "chuckroll": {
+      "best_score": 0.9377097503707509,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 200
+      }
+    },
+    "chuckclod": {
+      "best_score": 0.9127528415439219,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_samples_split": 2,
+        "n_estimators": 150
+      }
+    },
+    "chuckbrisket": {
+      "best_score": 0.7590690333149969,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "n_estimators": 250
+      }
+    }
+  }
+}

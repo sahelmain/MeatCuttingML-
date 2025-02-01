@@ -1,0 +1,37 @@
+2025-01-30 13:50:58,371 - INFO - Loading data...
+2025-01-30 13:50:58,375 - INFO - Loaded 98 samples
+2025-01-30 13:50:58,375 - INFO - Training models with improved parameters...
+2025-01-30 13:50:58,389 - INFO - Starting feature engineering...
+2025-01-30 13:50:58,437 - INFO - Created interaction terms
+2025-01-30 13:50:58,437 - INFO - Created polynomial features
+2025-01-30 13:50:58,453 - INFO - Created statistical features
+2025-01-30 13:50:58,453 - INFO - Feature engineering complete. Original features: 66, Engineered features: 375
+2025-01-30 13:50:58,454 - INFO - Training model for musc - sirloin
+2025-01-30 13:50:58,580 - INFO - Model Results:
+2025-01-30 13:50:58,581 - INFO -   RMSE: 0.0780
+2025-01-30 13:50:58,581 - INFO -   R²: 0.9879
+2025-01-30 13:50:58,581 - INFO - Training model for musc - round
+2025-01-30 13:50:58,707 - INFO - Model Results:
+2025-01-30 13:50:58,707 - INFO -   RMSE: 0.1607
+2025-01-30 13:50:58,707 - INFO -   R²: 0.9234
+2025-01-30 13:50:58,707 - INFO - Training model for musc - loinwing
+2025-01-30 13:50:58,834 - INFO - Model Results:
+2025-01-30 13:50:58,834 - INFO -   RMSE: 0.1231
+2025-01-30 13:50:58,834 - INFO -   R²: 0.9397
+2025-01-30 13:50:58,834 - INFO - Training model for musc - rib
+2025-01-30 13:50:58,958 - INFO - Model Results:
+2025-01-30 13:50:58,958 - INFO -   RMSE: 0.0750
+2025-01-30 13:50:58,959 - INFO -   R²: 0.9787
+2025-01-30 13:50:58,959 - INFO - Training model for musc - plate
+2025-01-30 13:50:59,081 - INFO - Model Results:
+2025-01-30 13:50:59,081 - INFO -   RMSE: 0.1440
+2025-01-30 13:50:59,081 - INFO -   R²: 0.9521
+2025-01-30 13:50:59,082 - INFO - Training model for musc - chuckroll
+2025-01-30 13:50:59,204 - INFO - Model Results:
+2025-01-30 13:50:59,204 - INFO -   RMSE: 0.0720
+2025-01-30 13:50:59,204 - INFO -   R²: 0.9913
+2025-01-30 13:50:59,205 - INFO - Training model for musc - chuckclod
+2025-01-30 13:50:59,326 - INFO - Model Results:
+2025-01-30 13:50:59,326 - INFO -   RMSE: 0.2095
+2025-01-30 13:50:59,326 - INFO -   R²: 0.9517
+2025-01-30 13:50:59,326 - INFO - Training model for musc - chuckbrisket

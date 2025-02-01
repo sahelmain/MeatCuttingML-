@@ -1,0 +1,58 @@
+2025-01-30 13:14:06,613 - INFO - Loading data...
+2025-01-30 13:14:06,618 - INFO - Loaded 98 samples
+2025-01-30 13:14:06,618 - INFO - Training models with improved parameters...
+2025-01-30 13:14:06,630 - INFO - Starting feature engineering...
+2025-01-30 13:14:06,722 - INFO - Created interaction terms
+2025-01-30 13:14:06,722 - INFO - Created polynomial features
+2025-01-30 13:14:06,735 - INFO - Created statistical features
+2025-01-30 13:14:06,735 - INFO - Feature engineering complete. Original features: 66, Engineered features: 375
+2025-01-30 13:14:06,736 - INFO - Training model for musc - sirloin
+2025-01-30 13:14:06,740 - INFO - Training gbm model...
+2025-01-30 13:16:05,268 - INFO - gbm Results:
+2025-01-30 13:16:05,269 - INFO -   RMSE: 0.0618
+2025-01-30 13:16:05,269 - INFO -   R²: 0.9924
+2025-01-30 13:16:05,269 - INFO -   Best params: {'learning_rate': 0.2599294316962114, 'loss': 'squared_error', 'max_depth': 5, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 18, 'n_estimators': 1395, 'subsample': 0.9702292921764571}
+2025-01-30 13:16:05,269 - INFO - Training xgb model...
+2025-01-30 13:16:24,695 - INFO - xgb Results:
+2025-01-30 13:16:24,696 - INFO -   RMSE: 0.0932
+2025-01-30 13:16:24,696 - INFO -   R²: 0.9828
+2025-01-30 13:16:24,696 - INFO -   Best params: {'colsample_bytree': 0.9951706566708886, 'gamma': 0.0011876178794228975, 'learning_rate': 0.05971450832513312, 'max_depth': 4, 'min_child_weight': 3, 'n_estimators': 1262, 'subsample': 0.5047427168142491}
+2025-01-30 13:16:24,696 - INFO - Training lgb model...
+2025-01-30 13:22:53,608 - INFO - lgb Results:
+2025-01-30 13:22:53,609 - INFO -   RMSE: 0.0965
+2025-01-30 13:22:53,609 - INFO -   R²: 0.9815
+2025-01-30 13:22:53,610 - INFO -   Best params: {'colsample_bytree': 0.975303573468778, 'learning_rate': 0.1741641769963694, 'max_depth': 7, 'min_child_samples': 5, 'n_estimators': 1322, 'num_leaves': 31, 'subsample': 0.664332272684958}
+2025-01-30 13:22:53,698 - INFO - Training model for musc - round
+2025-01-30 13:22:53,714 - INFO - Training gbm model...
+2025-01-30 13:25:12,859 - INFO - gbm Results:
+2025-01-30 13:25:12,860 - INFO -   RMSE: 0.0647
+2025-01-30 13:25:12,860 - INFO -   R²: 0.9876
+2025-01-30 13:25:12,860 - INFO -   Best params: {'learning_rate': 0.11605669322902464, 'loss': 'squared_error', 'max_depth': 4, 'max_features': None, 'min_samples_leaf': 1, 'min_samples_split': 12, 'n_estimators': 1052, 'subsample': 0.874789149988036}
+2025-01-30 13:25:12,860 - INFO - Training xgb model...
+2025-01-30 13:25:33,316 - INFO - xgb Results:
+2025-01-30 13:25:33,316 - INFO -   RMSE: 0.1091
+2025-01-30 13:25:33,316 - INFO -   R²: 0.9647
+2025-01-30 13:25:33,316 - INFO -   Best params: {'colsample_bytree': 0.8415033867081785, 'gamma': 0.35594324230114494, 'learning_rate': 0.09909781093665958, 'max_depth': 12, 'min_child_weight': 2, 'n_estimators': 314, 'subsample': 0.6409273873867}
+2025-01-30 13:25:33,316 - INFO - Training lgb model...
+2025-01-30 13:32:27,479 - INFO - lgb Results:
+2025-01-30 13:32:27,480 - INFO -   RMSE: 0.1736
+2025-01-30 13:32:27,480 - INFO -   R²: 0.9106
+2025-01-30 13:32:27,480 - INFO -   Best params: {'colsample_bytree': 0.7776004057997312, 'learning_rate': 0.1612469206150219, 'max_depth': 4, 'min_child_samples': 1, 'n_estimators': 1527, 'num_leaves': 31, 'subsample': 0.7791467268035488}
+2025-01-30 13:32:27,558 - INFO - Training model for musc - loinwing
+2025-01-30 13:32:27,569 - INFO - Training gbm model...
+2025-01-30 13:34:50,623 - INFO - gbm Results:
+2025-01-30 13:34:50,626 - INFO -   RMSE: 0.0640
+2025-01-30 13:34:50,626 - INFO -   R²: 0.9837
+2025-01-30 13:34:50,626 - INFO -   Best params: {'learning_rate': 0.014749966205661772, 'loss': 'squared_error', 'max_depth': 3, 'max_features': None, 'min_samples_leaf': 2, 'min_samples_split': 13, 'n_estimators': 929, 'subsample': 0.9928252270553004}
+2025-01-30 13:34:50,626 - INFO - Training xgb model...
+2025-01-30 13:35:12,658 - INFO - xgb Results:
+2025-01-30 13:35:12,659 - INFO -   RMSE: 0.0655
+2025-01-30 13:35:12,659 - INFO -   R²: 0.9830
+2025-01-30 13:35:12,659 - INFO -   Best params: {'colsample_bytree': 0.8791315979645113, 'gamma': 0.12293458229400755, 'learning_rate': 0.011526447701054189, 'max_depth': 8, 'min_child_weight': 3, 'n_estimators': 658, 'subsample': 0.8416476883032527}
+2025-01-30 13:35:12,659 - INFO - Training lgb model...
+2025-01-30 13:42:29,473 - INFO - lgb Results:
+2025-01-30 13:42:29,474 - INFO -   RMSE: 0.1014
+2025-01-30 13:42:29,474 - INFO -   R²: 0.9591
+2025-01-30 13:42:29,474 - INFO -   Best params: {'colsample_bytree': 0.9812236474710556, 'learning_rate': 0.07927577726848242, 'max_depth': 4, 'min_child_samples': 3, 'n_estimators': 1336, 'num_leaves': 75, 'subsample': 0.5184434736772664}
+2025-01-30 13:42:29,598 - INFO - Training model for musc - rib
+2025-01-30 13:42:29,612 - INFO - Training gbm model...
